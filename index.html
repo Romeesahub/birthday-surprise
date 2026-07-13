@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+
+background:white;
+width:90%;
+max-width:800px;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+}
+
+h1{
+
+color:#ff3b6b;
+
+margin-bottom:15px;
+
+}
+
+p{
+
+font-size:18px;
+
+margin-bottom:30px;
+
+color:#444;
+
+}
+
+button{
+
+padding:15px 25px;
+
+margin:10px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:30px;
+
+cursor:pointer;
+
+background:#ff3b6b;
+
+color:white;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+.section{
+
+display:none;
+
+margin-top:35px;
+
+padding:25px;
+
+border-radius:15px;
+
+background:#fff5f8;
+
+text-align:left;
+
+line-height:1.8;
+
+}
+
+.section h2{
+
+text-align:center;
+
+margin-bottom:20px;
+
+color:#ff3b6b;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎂 Happy Birthday My Love ❤️</h1>
+
+<p>
+I made something special just for you...
+Choose one surprise below.
+</p>
+
+<button onclick="showSection('letter')">💌 Love Letter</button>
+
+<button onclick="showSection('memories')">📸 Our Memories</button>
+
+<button onclick="showSection('surprise')">🎁 Secret Surprise</button>
+
+<div id="letter" class="section">
+
+<h2>💌 Love Letter</h2>
+
+<p>
+
+We'll add your beautiful letter in the next step.
+
+</p>
+
+</div>
+
+<div id="memories" class="section">
+
+<h2>📸 Our Memories</h2>
+
+<p>
+
+We'll add your photos here.
+
+</p>
+
+</div>
+
+<div id="surprise" class="section">
+
+<h2>🎁 Secret Surprise</h2>
+
+<p>
+
+A surprise is waiting...
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function showSection(id){
+
+let sections=document.querySelectorAll('.section');
+
+sections.forEach(function(section){
+
+section.style.display='none';
+
+});
+
+document.getElementById(id).style.display='block';
+
+}
+
+</script>
+
+</body>
+</html>
